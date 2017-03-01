@@ -8,6 +8,24 @@
 	border: 1px solid lightgrey;
 	border-radius: 5px;
 	width: 350px;
+	position: relative;
+}
+
+.octocat {
+	display: block;
+	position: relative;
+}
+
+li:after{
+	content:"";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 7px 5px 0 5px;
+	border-color: lightgrey transparent transparent transparent;
+	position: absolute;
+	top: 351px;
+	left: 330px;
 }
 
 .authors img {
@@ -18,6 +36,10 @@
 	display:flex;
 	justify-content: space-between;
 	font-family: helvetica;
+	border-bottom: 1px solid #ccc;
+	height: 50px;
+	line-height: 50px;
+	margin-bottom: 10px;
 }
 
 a {
@@ -49,16 +71,6 @@ ul{
 	padding: 0 5px;
 }
 
-li:after{
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 6px 4px 0 4px;
-	border-color: red;
-	position: absolute;
-	bottom: 10px;
-	right: 10px;
-}
 	
 .image-caption > a{
 		padding: 0 5px;
